@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Awesome CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <title>PASSnip</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Page header -->
+    <h2><i class="fa-solid fa-carrot"></i> PASSnip</h2>
+    <div class="wrapper">
+      <!-- Password input field -->
+      <div class="input-field">
+        <input
+          type="text"
+          id="password"
+          placeholder="Generate Your Password"
+        />
+        <i class="fa-regular fa-copy"></i> <!-- Copy icon -->
+      </div>
+
+      <!-- Password generator settings -->
+      <div class="password">
+        <!-- Password length slider -->
+        <div class="pass-length">
+          <div class="details">
+            <label class="title">Pass Length</label>
+            <span></span> <!-- Display selected password length -->
+          </div>
+          <input type="range" min="1" max="30" value="10" step="1" />
+        </div>
+
+        <!-- Generate password button -->
+        <button class="gen-btn">Generate Password</button>
+
+        <!-- More settings button -->
+        <div class="more-btn"><i class="fa-solid fa-angle-down"></i></div>
+
+        <!-- Additional password settings -->
+        <div class="pass-settings">
+          <label class="title">Pass Settings</label>
+          <ul class="options">
+            <!-- Checkbox options for password generation -->
+            <li class="option">
+              <input type="checkbox" name="" id="lowercase" checked />
+              <label for="lowercase">Lowercase (a-z)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" name="" id="uppercase" checked/>
+              <label for="uppercase">Uppercase (A-Z)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" name="" id="numbers" checked/>
+              <label for="numbers">Numbers (0-9)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" name="" id="symbols" checked/>
+              <label for="symbols">Symbols (!@#$%)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" name="" id="duplicate" />
+              <label for="duplicate">Exclude Duplicate </label>
+            </li>
+            <li class="option">
+              <input type="checkbox" name="" id="spaces" />
+              <label for="spaces">Include Spaces </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="index.js"></script>
+</body>
+</html>
