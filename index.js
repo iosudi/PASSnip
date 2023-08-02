@@ -45,7 +45,7 @@ const generatePassword = () => {
   }
 
   // Generate the random password based on selected options and length
-  for (let i = 0; i <= passLength; i++) {
+  for (let i = 1; i <= passLength; i++) {
     let rand =
       staticPassword[Math.floor(Math.random() * staticPassword.length)];
     if (excludeDuplicate) {
